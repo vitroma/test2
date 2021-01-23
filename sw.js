@@ -16,9 +16,9 @@ self.addEventListener('install', function(e) {
           '/',
           '/index.html',
           '/manifest.webmanifest',
-          '/css/onsenui-core.min.css',
-          '/css/onsen-css-components.min.css',
-          '/js/onsenui.min.js'
+          '/onsenui-core.min.css',
+          '/onsen-css-components.min.css',
+          '/onsenui.min.js'
         ]);
       })
     );
