@@ -1,4 +1,4 @@
-// VERSION: 4
+// VERSION: 8
 // 1. Save the files to the user's device
 // The "install" event is called when the ServiceWorker starts up.
 // All ServiceWorker code must be inside events.
@@ -15,7 +15,7 @@ self.addEventListener('install', function(e) {
         return cache.addAll([
           '/',
           '/index.html',
-          '/manifest.json',
+          '/manifest.webmanifest',
           '/css/onsenui-core.min.css',
           '/css/onsen-css-components.min.css',
           '/js/onsenui.min.js'
