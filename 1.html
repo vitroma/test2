@@ -13,24 +13,65 @@
 
  <script>
     let dict = [
-            ["один","ein"],
-            ["два","zwei"],
-            ["три","drei"],
-
+            ["я","ich"],
+            ["ты","du"],
+            ["он","er"],
+            ["она","sie"],
+            ["оно","es"],
+            ["мы","wir"],
+            ["вы","ihr"],
+            ["они","sie"],
+            ["Вы","Sie"],
+            ["мой","main"],
+            ["твой","dein"],
+            ["его","sein"],
+            ["её","ihr"],
+            ["его","sein"],
+            ["наш","unser"],
+            ["ваш","euer"],
+            ["их","ihr"],
+            ["Ваш","Ihr"],
+            ["моё","main"],
+            ["твоё","dein"],
+            ["его","sein"],
+            ["её","ihr"],
+            ["его","sein"],
+            ["наш","unser"],
+            ["ваш","euer"],
+            ["их","ihr"],
+            ["Ваш","Ihr"],
+            ["моя","maine"],
+            ["твоя","deine"],
+            ["его","seine"],
+            ["её","ihre"],
+            ["его","seine"],
+            ["наша","unsere"],
+            ["ваша","eure"],
+            ["их","ihre"],
+            ["Ваша","Ihre"],
+            ["мои","maine"],
+            ["твои","deine"],
+            ["его","seine"],
+            ["её","ihre"],
+            ["его","seine"],
+            ["наши","unsere"],
+            ["ваши","eure"],
+            ["их","ihre"],
+            ["Ваши","Ihre"],
           ];
 </script>
 
 </head>
-<body >
+<body onload="pageLoad()" >
 
 <div class="w3-container">
   <label class="w3-text-dark-grey"><b>Русский</b></label>
   <input id="ru" type="text"  class="w3-input" placeholder="text" value="" readonly>
   <label id="de_lable" class="w3-text-dark-grey"><b>Немецкий</b></label>
-  <input id="de_input" type="text"  class="w3-input" placeholder="введи перевод здесь" value="">
+  <input id="de_input" type="text"  class="w3-input" onfocus="clearDeInput()" onkeydown="onenter(event)" placeholder="введи перевод здесь" value="">
   <p>
   <div class="w3-row">
-   <button class="w3-button w3-light-grey w3-left"  onclick="check()">Проверить</button>
+   <button id="buttonCheck" class="w3-button w3-light-grey w3-left"  onclick="check()">Проверить</button>
    <button class="w3-button w3-light-grey w3-right"  onclick="next()">Следующее</button>
   </div>
 </div>
