@@ -49,17 +49,27 @@
 </head>
 <body onload="pageLoad()" >
 
-<div class="w3-container">
-  <label class="w3-text-dark-grey"><b>Русский</b></label>
-  <input id="ru" type="text"  class="w3-input" placeholder="text" value="" readonly>
-  <label id="de_lable" class="w3-text-dark-grey"><b>Немецкий</b></label>
-  <input id="de_input" type="text"  class="w3-input" onfocus="clearDeInput()" onkeydown="onenter(event)" placeholder="введи перевод здесь" value="">
-  <p>
-  <div class="w3-row">
-   <button id="buttonCheck" class="w3-button w3-light-grey w3-block"  onclick="check()">Проверить</button>
-   
+
+
+  <div class="w3-container w3-grey">
+    <h3>Личные местоимения</h3>
   </div>
-</div>
+
+
+    <div class="w3-container" >
+      <label class="w3-text-dark-grey"><b>Русский</b></label>
+      <input id="ru" type="text"  class="w3-input" placeholder="text" value="" readonly>
+      <label id="de_lable" class="w3-text-dark-grey"><b>Немецкий</b></label>
+      <input id="de_input" type="text"  class="w3-input" onfocus="clearDeInput()" onkeydown="onenter(event)" placeholder="введи перевод здесь" value="">
+      <p>
+      <div class="w3-row">
+       <button id="buttonCheck" class="w3-button w3-round-xxlarge w3-light-grey w3-block"  onclick="check()">Проверить</button>
+       
+      </div>
+    </div>
+
+
+
 
 
 
