@@ -26,6 +26,7 @@ let wordNumbers;
       ru_word = dict[l_cur_idx][0];
       de_word = dict[l_cur_idx][1];
       clearDeInput();
+      document.getElementById("de_input").focus();
       }
 
     function onenter(e){
@@ -39,13 +40,16 @@ let wordNumbers;
 
     function check(){
       let cur_de_word = document.getElementById("de_input").value;
-      if(de_word === cur_de_word){
+      if(de_word === cur_de_word){ //ok
         document.getElementById("de_lable").classList.replace("w3-text-dark-grey","w3-text-green");
         
       }
-      else{
+      else{  //error
         document.getElementById("de_lable").classList.replace("w3-text-dark-grey","w3-text-red" );
         document.getElementById("de_input").value += "   (" +  de_word + ")" ;
       }  
+      setTimeout(function(){ next(); }, 1000);
+    
+    
 
     }

@@ -8,56 +8,41 @@
     <script src="app.js"></script>
 
 
-    
+
 
 
  <script>
     let dict = [
-            ["я","ich"],
-            ["ты","du"],
-            ["он","er"],
-            ["она","sie"],
-            ["оно","es"],
-            ["мы","wir"],
-            ["вы","ihr"],
-            ["они","sie"],
-            ["Вы","Sie"],
-            ["мой","mein"],
-            ["твой","dein"],
-            ["его","sein"],
-            ["её","ihr"],
-            ["его","sein"],
-            ["наш","unser"],
-            ["ваш","euer"],
-            ["их","ihr"],
-            ["Ваш","Ihr"],
-            ["моё","mein"],
-            ["твоё","dein"],
-            ["его","sein"],
-            ["её","ihr"],
-            ["его","sein"],
-            ["наш","unser"],
-            ["ваш","euer"],
-            ["их","ihr"],
-            ["Ваш","Ihr"],
-            ["моя","meine"],
-            ["твоя","deine"],
-            ["его","seine"],
-            ["её","ihre"],
-            ["его","seine"],
-            ["наша","unsere"],
-            ["ваша","eure"],
-            ["их","ihre"],
-            ["Ваша","Ihre"],
-            ["мои","meine"],
-            ["твои","deine"],
-            ["его","seine"],
-            ["её","ihre"],
-            ["его","seine"],
-            ["наши","unsere"],
-            ["ваши","eure"],
-            ["их","ihre"],
-            ["Ваши","Ihre"],
+            ["я 1ф    кто?"   ,"ich"],     //// Nominative  
+            ["ты 2ф   кто?"   ,"du"],
+            ["он 3ф   кто?"   ,"er"],
+            ["она 3ф  кто?"   ,"sie"],
+            ["оно 3фc кто?"   ,"es"],
+            ["мы 1ф   кто?"   ,"wir"],
+            ["вы 2ф   кто?"   ,"ihr"],
+            ["они 3ф  кто?"   ,"sie"],
+            ["Вы веж  кто?"   ,"Sie"], 
+            //////////////////////////////////////// 
+            ["мне 1ф  кому?"  ,"mir"],     //// DATIVE
+            ["тебе 2ф кому?"  ,"dir"],
+            ["ему 3ф  кому?"  ,"ihm"],
+            ["ей 3ф   кому?"  ,"ihr"],
+            ["ему 3фc кому?"  ,"ihm"],
+            ["нам 1ф  кому?"  ,"uns"],
+            ["вам 2ф  кому?"  ,"euch"],
+            ["им 3ф   кому?"  ,"ihnen"],
+            ["Вам веж кому?"  ,"Ihnen"],
+            ////////////////////////////////////////////
+            ["меня 1ф кого? что?"  ,"mich"],       //// Accusative
+            ["тебя 2ф кого? что?"  ,"dich"],
+            ["его 3ф  кого? что?"  ,"ihn"],
+            ["её 3ф   кого? что?"  ,"sie"],
+            ["его 3ф  кого? что?"  ,"es"],
+            ["нас 1ф  кого? что?"  ,"uns"],
+            ["вас 2ф  кого? что?"  ,"euch"],
+            ["их 3ф   кого? что?"  ,"sie"],
+            ["Вас веж кого? что?"  ,"Sie"],
+
           ];
 </script>
 
@@ -71,8 +56,8 @@
   <input id="de_input" type="text"  class="w3-input" onfocus="clearDeInput()" onkeydown="onenter(event)" placeholder="введи перевод здесь" value="">
   <p>
   <div class="w3-row">
-   <button id="buttonCheck" class="w3-button w3-light-grey w3-left"  onclick="check()">Проверить</button>
-   <button class="w3-button w3-light-grey w3-right"  onclick="next()">Следующее</button>
+   <button id="buttonCheck" class="w3-button w3-light-grey w3-block"  onclick="check()">Проверить</button>
+   
   </div>
 </div>
 
